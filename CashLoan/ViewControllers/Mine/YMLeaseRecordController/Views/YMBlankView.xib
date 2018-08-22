@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ff2-CU-bBN" customClass="YMBlankView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ym_icon_none" translatesAutoresizingMaskIntoConstraints="NO" id="4Yi-rx-F0Y">
+                    <rect key="frame" x="136" y="100" width="102" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="96" id="2Px-wy-yS8"/>
+                        <constraint firstAttribute="width" constant="102" id="vZQ-dF-uuL"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前没有租赁账单，刷新试试" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biv-TO-hFU">
+                    <rect key="frame" x="12" y="221" width="351" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.64365878809999999" green="0.64365878809999999" blue="0.64365878809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnL-7b-dq7">
+                    <rect key="frame" x="147.5" y="289" width="80" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="bvf-XE-Vdw"/>
+                        <constraint firstAttribute="height" constant="30" id="vJG-d7-Zdx"/>
+                    </constraints>
+                    <state key="normal" title="刷新"/>
+                    <connections>
+                        <action selector="resetBtnAction:" destination="ff2-CU-bBN" eventType="touchUpInside" id="dic-HF-rLJ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="biv-TO-hFU" firstAttribute="top" secondItem="4Yi-rx-F0Y" secondAttribute="bottom" constant="25" id="5fZ-WV-1mX"/>
+                <constraint firstItem="biv-TO-hFU" firstAttribute="leading" secondItem="ff2-CU-bBN" secondAttribute="leading" constant="12" id="AS2-8b-iFb"/>
+                <constraint firstItem="HnL-7b-dq7" firstAttribute="top" secondItem="biv-TO-hFU" secondAttribute="bottom" constant="50" id="FH8-BJ-GmQ"/>
+                <constraint firstItem="4Yi-rx-F0Y" firstAttribute="top" secondItem="ff2-CU-bBN" secondAttribute="top" constant="100" id="KUk-hp-lAW"/>
+                <constraint firstAttribute="trailing" secondItem="biv-TO-hFU" secondAttribute="trailing" constant="12" id="SkR-Jx-Ufo"/>
+                <constraint firstItem="HnL-7b-dq7" firstAttribute="centerX" secondItem="ff2-CU-bBN" secondAttribute="centerX" id="Ui3-cL-gea"/>
+                <constraint firstItem="4Yi-rx-F0Y" firstAttribute="centerX" secondItem="ff2-CU-bBN" secondAttribute="centerX" id="fMf-KS-QNl"/>
+            </constraints>
+            <connections>
+                <outlet property="resetBtn" destination="HnL-7b-dq7" id="zN2-Yn-HFa"/>
+            </connections>
+            <point key="canvasLocation" x="4" y="45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ym_icon_none" width="101" height="96"/>
+    </resources>
+</document>

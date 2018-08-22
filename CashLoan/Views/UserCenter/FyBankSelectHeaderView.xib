@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FyBankSelectHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJH-BS-lwc">
+                    <rect key="frame" x="30" y="666" width="315" height="1"/>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.82745098039999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Blf-Xl-Yxl" customClass="LPSeparateLineConstraint"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="仅支持借记卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01w-04-eXE">
+                    <rect key="frame" x="30" y="0.0" width="315" height="666"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="01w-04-eXE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="OY0-3m-bil"/>
+                <constraint firstAttribute="trailing" secondItem="jJH-BS-lwc" secondAttribute="trailing" constant="30" id="eR4-DW-gZu"/>
+                <constraint firstAttribute="bottom" secondItem="jJH-BS-lwc" secondAttribute="bottom" id="myj-z5-ee6"/>
+                <constraint firstAttribute="trailing" secondItem="01w-04-eXE" secondAttribute="trailing" constant="30" id="oxe-sn-Hd1"/>
+                <constraint firstItem="01w-04-eXE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="pe9-NY-5E9"/>
+                <constraint firstItem="jJH-BS-lwc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="qWT-Ra-zaz"/>
+                <constraint firstItem="jJH-BS-lwc" firstAttribute="top" secondItem="01w-04-eXE" secondAttribute="bottom" id="xbb-rD-dka"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

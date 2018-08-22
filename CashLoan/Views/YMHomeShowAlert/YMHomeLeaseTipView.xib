@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qev-uZ-yFc" customClass="YMHomeLeaseTipView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="450"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ILC-aL-UDf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="租赁提示" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDq-Dj-SHc">
+                            <rect key="frame" x="12" y="15" width="351" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhb-gI-fQe">
+                            <rect key="frame" x="0.0" y="109.5" width="375" height="150"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="Kju-bM-Iha"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亲爱的用户，检测到您原来有完成的租赁记录，是否选择原设备进行租赁:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQ1-mR-0Ww">
+                            <rect key="frame" x="12" y="46" width="351" height="33.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.64365878809999999" green="0.64365878809999999" blue="0.64365878809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRY-ub-ls2">
+                            <rect key="frame" x="116.5" y="286.5" width="141" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="l5u-U5-QGH"/>
+                                <constraint firstAttribute="width" constant="141" id="x4P-ju-XFM"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="ym_ljzl">
+                                <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="leaseAction:" destination="qev-uZ-yFc" eventType="touchUpInside" id="DfA-mg-bqM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fRY-ub-ls2" firstAttribute="top" secondItem="Uhb-gI-fQe" secondAttribute="bottom" constant="27" id="163-P1-m7t"/>
+                        <constraint firstItem="Uhb-gI-fQe" firstAttribute="top" secondItem="fQ1-mR-0Ww" secondAttribute="bottom" constant="30" id="5Mq-cJ-hC5"/>
+                        <constraint firstAttribute="height" constant="350" id="5hE-VT-kTC"/>
+                        <constraint firstItem="BDq-Dj-SHc" firstAttribute="leading" secondItem="ILC-aL-UDf" secondAttribute="leading" constant="12" id="OVQ-4X-6tg"/>
+                        <constraint firstAttribute="trailing" secondItem="fQ1-mR-0Ww" secondAttribute="trailing" constant="12" id="TSv-Yn-z5W"/>
+                        <constraint firstAttribute="trailing" secondItem="Uhb-gI-fQe" secondAttribute="trailing" id="X2Z-nG-0Z2"/>
+                        <constraint firstItem="fQ1-mR-0Ww" firstAttribute="leading" secondItem="ILC-aL-UDf" secondAttribute="leading" constant="12" id="cT8-NT-lsD"/>
+                        <constraint firstItem="fRY-ub-ls2" firstAttribute="centerX" secondItem="ILC-aL-UDf" secondAttribute="centerX" id="ieD-Dp-env"/>
+                        <constraint firstItem="fQ1-mR-0Ww" firstAttribute="top" secondItem="BDq-Dj-SHc" secondAttribute="bottom" constant="10" id="noP-hy-Wfm"/>
+                        <constraint firstAttribute="trailing" secondItem="BDq-Dj-SHc" secondAttribute="trailing" constant="12" id="ruj-jH-mEW"/>
+                        <constraint firstItem="Uhb-gI-fQe" firstAttribute="leading" secondItem="ILC-aL-UDf" secondAttribute="leading" id="wy3-rd-m9d"/>
+                        <constraint firstItem="BDq-Dj-SHc" firstAttribute="top" secondItem="ILC-aL-UDf" secondAttribute="top" constant="15" id="xaw-Sg-x5g"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xs-Pn-VTz">
+                    <rect key="frame" x="135" y="377" width="104" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Gvx-fp-mbB"/>
+                        <constraint firstAttribute="width" constant="104" id="Sup-TM-c4b"/>
+                    </constraints>
+                    <state key="normal" image="popup_btn_close"/>
+                    <connections>
+                        <action selector="closeAction:" destination="qev-uZ-yFc" eventType="touchUpInside" id="BXh-iD-JZk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="6xs-Pn-VTz" firstAttribute="top" secondItem="ILC-aL-UDf" secondAttribute="bottom" constant="27" id="07F-aE-7Z8"/>
+                <constraint firstAttribute="trailing" secondItem="ILC-aL-UDf" secondAttribute="trailing" id="CiW-47-a4e"/>
+                <constraint firstItem="6xs-Pn-VTz" firstAttribute="centerX" secondItem="qev-uZ-yFc" secondAttribute="centerX" id="b4R-xH-HXR"/>
+                <constraint firstItem="ILC-aL-UDf" firstAttribute="leading" secondItem="qev-uZ-yFc" secondAttribute="leading" id="iMS-N3-1zS"/>
+                <constraint firstItem="ILC-aL-UDf" firstAttribute="top" secondItem="qev-uZ-yFc" secondAttribute="top" id="yvy-vA-uMP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgHeightConstraint" destination="5hE-VT-kTC" id="egW-vM-kUR"/>
+                <outlet property="bgTableView" destination="Uhb-gI-fQe" id="S3g-Hj-7l6"/>
+                <outlet property="bgTableViewConstraint" destination="Kju-bM-Iha" id="wER-pb-BGy"/>
+                <outlet property="containerView" destination="ILC-aL-UDf" id="f5U-in-bF6"/>
+            </connections>
+            <point key="canvasLocation" x="-406.5" y="198"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_btn_close" width="50" height="50"/>
+        <image name="ym_ljzl" width="141" height="40"/>
+    </resources>
+</document>

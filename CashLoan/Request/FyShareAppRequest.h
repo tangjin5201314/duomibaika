@@ -1,0 +1,14 @@
+//
+//  FyShareAppRequest.h
+//  CashLoan
+//
+//  Created by fyhy on 2017/10/24.
+//  Copyright © 2017年 富银宏远. All rights reserved.
+//
+
+#import "FyBaseRequest.h"
+//#import "FyShareObjectModel.h"
+
+@interface FyShareAppRequest : FyBaseRequest
+
+@end

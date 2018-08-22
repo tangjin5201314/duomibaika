@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="FyRepaySchedulePopView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OhB-va-cm2">
+                    <rect key="frame" x="15" y="0.0" width="69.5" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3I9-8e-4oc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-fc-pOv">
+                    <rect key="frame" x="15" y="44" width="265" height="1"/>
+                    <color key="backgroundColor" red="0.78823529411764703" green="0.82745098039215681" blue="0.8784313725490196" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="CV2-c6-Igu" customClass="LPSeparateLineConstraint"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daW-W1-bwn">
+                    <rect key="frame" x="236" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ETa-YN-EE1"/>
+                    </constraints>
+                    <state key="normal" image="btn_closed"/>
+                    <connections>
+                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZWJ-bW-9uL"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8KG-WH-bMe">
+                    <rect key="frame" x="0.0" y="55" width="280" height="185"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8KG-WH-bMe" firstAttribute="top" secondItem="GaA-fc-pOv" secondAttribute="bottom" constant="10" id="93R-YR-06M"/>
+                <constraint firstItem="GaA-fc-pOv" firstAttribute="top" secondItem="OhB-va-cm2" secondAttribute="bottom" id="BWo-qF-OsC"/>
+                <constraint firstItem="OhB-va-cm2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="D9F-M2-JHE"/>
+                <constraint firstItem="GaA-fc-pOv" firstAttribute="top" secondItem="daW-W1-bwn" secondAttribute="bottom" id="HAH-Mm-FFY"/>
+                <constraint firstItem="OhB-va-cm2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HC9-Kk-ccV"/>
+                <constraint firstItem="GaA-fc-pOv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="JE3-ld-HmN"/>
+                <constraint firstAttribute="trailing" secondItem="8KG-WH-bMe" secondAttribute="trailing" id="a4w-hl-kLM"/>
+                <constraint firstAttribute="trailing" secondItem="daW-W1-bwn" secondAttribute="trailing" id="cjY-ef-923"/>
+                <constraint firstItem="daW-W1-bwn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iAL-oL-9uD"/>
+                <constraint firstAttribute="bottom" secondItem="8KG-WH-bMe" secondAttribute="bottom" constant="10" id="m8O-n5-Mhh"/>
+                <constraint firstAttribute="trailing" secondItem="GaA-fc-pOv" secondAttribute="trailing" id="pwE-2B-LSq"/>
+                <constraint firstItem="8KG-WH-bMe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sAy-O1-R11"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="corners">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="fy_width">
+                    <real key="value" value="300"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="tableView" destination="8KG-WH-bMe" id="Obf-AK-gF7"/>
+            </connections>
+            <point key="canvasLocation" x="113" y="25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_closed" width="22" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FyLackOfCreditPopView">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="275"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KzT-iU-PZ2">
+                    <rect key="frame" x="115.5" y="320" width="50" height="50"/>
+                    <state key="normal" image="popup_btn_close"/>
+                    <connections>
+                        <action selector="closeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="u05-Aw-oHH"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="popup_icon_edu" translatesAutoresizingMaskIntoConstraints="NO" id="adR-km-x7J">
+                    <rect key="frame" x="31.5" y="0.0" width="217" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="kiS-TJ-yI7"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ieZ-KL-f0N">
+                    <rect key="frame" x="20" y="130" width="240" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="4Tq-U3-i9e"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="很遗憾，你当前可用额度低于最低可借额度">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="500">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" metaFont="system" size="15"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="元。请持续关注富卡">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="APP">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" metaFont="system" size="15"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="，额度会定期评估。">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.21960784310000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <font key="NSFont" size="15" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineSpacing="5" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnt-gv-R5C" customClass="FyGradientTextBtn">
+                    <rect key="frame" x="70" y="220" width="141" height="40"/>
+                    <state key="normal" title="确认" backgroundImage="popup_btn_biankuang">
+                        <color key="titleColor" red="0.0" green="0.61960784310000006" blue="0.96078431369999995" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="closeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Ox-wp-hjH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pnt-gv-R5C" firstAttribute="top" secondItem="ieZ-KL-f0N" secondAttribute="bottom" constant="15" id="9fU-zi-oGG"/>
+                <constraint firstItem="ieZ-KL-f0N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="BcV-wp-371"/>
+                <constraint firstItem="adR-km-x7J" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LPY-UL-3Oy"/>
+                <constraint firstItem="adR-km-x7J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Mq7-Ye-iZB"/>
+                <constraint firstAttribute="trailing" secondItem="ieZ-KL-f0N" secondAttribute="trailing" constant="20" id="NhE-LQ-g4V"/>
+                <constraint firstItem="pnt-gv-R5C" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RMr-Au-ovG"/>
+                <constraint firstItem="KzT-iU-PZ2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="apR-eG-cdk"/>
+                <constraint firstItem="KzT-iU-PZ2" firstAttribute="top" secondItem="pnt-gv-R5C" secondAttribute="bottom" constant="60" id="cO6-WF-2ty"/>
+                <constraint firstItem="ieZ-KL-f0N" firstAttribute="top" secondItem="adR-km-x7J" secondAttribute="bottom" id="wVY-Zt-G0S"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="corners">
+                    <integer key="value" value="15"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                    <real key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="fy_width">
+                    <real key="value" value="280"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="fy_height">
+                    <real key="value" value="275"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="button" destination="KzT-iU-PZ2" id="7kt-gJ-8hK"/>
+                <outlet property="textLabel" destination="ieZ-KL-f0N" id="Oxc-da-LWU"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="122.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="popup_btn_biankuang" width="141" height="40"/>
+        <image name="popup_btn_close" width="50" height="50"/>
+        <image name="popup_icon_edu" width="217" height="142"/>
+    </resources>
+</document>

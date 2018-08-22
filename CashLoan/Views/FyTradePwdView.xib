@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FyTradePwdView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yIS-cy-LXS">
+                    <rect key="frame" x="0.0" y="50" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.78823529410000004" green="0.82745098039999998" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="lth-OV-vaI" customClass="LPSeparateLineConstraint"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ls0-H2-4D9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nL9-kG-1Sc">
+                            <rect key="frame" x="15" y="16" width="50" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="FDn-Sa-HcE"/>
+                            </constraints>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <state key="normal" image="btn_back_black"/>
+                            <connections>
+                                <action selector="backAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="GAQ-f9-EvQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf2-Es-r5f">
+                            <rect key="frame" x="310" y="14" width="50" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="WPB-h7-LEE"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="btn_closed"/>
+                            <connections>
+                                <action selector="closeAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xer-LW-7tr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="nL9-kG-1Sc" firstAttribute="centerY" secondItem="ls0-H2-4D9" secondAttribute="centerY" id="A1h-VI-9Zv"/>
+                        <constraint firstItem="nL9-kG-1Sc" firstAttribute="leading" secondItem="ls0-H2-4D9" secondAttribute="leading" constant="15" id="Miv-I3-eMg"/>
+                        <constraint firstAttribute="trailing" secondItem="wf2-Es-r5f" secondAttribute="trailing" constant="15" id="Qdm-Zh-Tns"/>
+                        <constraint firstItem="wf2-Es-r5f" firstAttribute="centerY" secondItem="ls0-H2-4D9" secondAttribute="centerY" id="qc0-gD-b3n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w7W-TT-awd" customClass="SYPasswordView">
+                    <rect key="frame" x="20" y="121" width="335" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BXR-D6-5YE"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="两次输入不一致" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYh-rc-sHr">
+                    <rect key="frame" x="20" y="181" width="91.5" height="18.5"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                    <color key="textColor" red="0.98431372549019602" green="0.13333333333333333" blue="0.019607843137254902" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Q3-qR-COC">
+                    <rect key="frame" x="278" y="181" width="77" height="30"/>
+                    <state key="normal" title="忘记密码？">
+                        <color key="titleColor" red="0.20000000000000001" green="0.2196078431372549" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="forgetAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZW5-2o-EZU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置交易密码" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-bI-3S7">
+                    <rect key="frame" x="20" y="50" width="150" height="35"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="25"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yIS-cy-LXS" firstAttribute="top" secondItem="ls0-H2-4D9" secondAttribute="bottom" id="1YF-mr-Du5"/>
+                <constraint firstItem="w7W-TT-awd" firstAttribute="top" secondItem="yIS-cy-LXS" secondAttribute="bottom" constant="70" id="1qO-jR-QGf"/>
+                <constraint firstAttribute="trailing" secondItem="w7W-TT-awd" secondAttribute="trailing" constant="20" id="4Ts-kU-hj9"/>
+                <constraint firstAttribute="trailing" secondItem="ls0-H2-4D9" secondAttribute="trailing" id="C4K-Nc-RNr"/>
+                <constraint firstItem="yIS-cy-LXS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="LO7-jH-ABz"/>
+                <constraint firstItem="w7W-TT-awd" firstAttribute="leading" secondItem="Gcg-bI-3S7" secondAttribute="leading" id="UaG-78-fxO"/>
+                <constraint firstItem="w7W-TT-awd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Xb1-1S-tPl"/>
+                <constraint firstItem="Gcg-bI-3S7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="f0Z-cw-Uvp"/>
+                <constraint firstItem="ls0-H2-4D9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fi0-8f-zKK"/>
+                <constraint firstItem="yIS-cy-LXS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gdm-Xz-hfC"/>
+                <constraint firstAttribute="trailing" secondItem="yIS-cy-LXS" secondAttribute="trailing" id="i5j-ba-9ds"/>
+                <constraint firstItem="bYh-rc-sHr" firstAttribute="top" secondItem="w7W-TT-awd" secondAttribute="bottom" constant="10" id="ksT-cK-rxM"/>
+                <constraint firstItem="8Q3-qR-COC" firstAttribute="trailing" secondItem="w7W-TT-awd" secondAttribute="trailing" id="mZN-cv-Cbx"/>
+                <constraint firstItem="ls0-H2-4D9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nEA-C3-H9Z"/>
+                <constraint firstItem="bYh-rc-sHr" firstAttribute="leading" secondItem="w7W-TT-awd" secondAttribute="leading" id="sCQ-xD-Aoq"/>
+                <constraint firstItem="8Q3-qR-COC" firstAttribute="top" secondItem="w7W-TT-awd" secondAttribute="bottom" constant="10" id="xyU-x5-Hff"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="fy_height">
+                    <real key="value" value="450"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="backBtn" destination="nL9-kG-1Sc" id="e7h-oo-vxC"/>
+                <outlet property="closeBtn" destination="wf2-Es-r5f" id="45o-Za-s10"/>
+                <outlet property="forgetBtn" destination="8Q3-qR-COC" id="3wN-wI-Ng7"/>
+                <outlet property="passwordView" destination="w7W-TT-awd" id="h1w-jS-4nK"/>
+                <outlet property="tipLabel" destination="bYh-rc-sHr" id="0dc-Yz-Wir"/>
+                <outlet property="titleLabel" destination="Gcg-bI-3S7" id="YK2-ay-JGw"/>
+            </connections>
+            <point key="canvasLocation" x="66.5" y="138.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_back_black" width="10" height="18"/>
+        <image name="btn_closed" width="22" height="22"/>
+    </resources>
+</document>

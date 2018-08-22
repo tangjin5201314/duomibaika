@@ -1,0 +1,50 @@
+//
+//  fyPrefixHeader.pch
+//  CashLoan
+//
+//  Created by fyhy on 2017/10/12.
+//  Copyright © 2017年 富银宏远. All rights reserved.
+//
+
+#ifndef fyPrefixHeader_pch
+#define fyPrefixHeader_pch
+
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+//字符串判断用
+#define CHECKNULL(__X__) (__X__) ?  (__X__) :  @""
+
+//第三方开发者key
+#define AMapID @"359e1b6167a941c5bfe588c8fdf5165b"
+#define UMKey @"5982fe9507fe6575c100022a"
+
+#import "UIColor+fyTheme.h"
+#import "UIView+fyNib.h"
+//#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <SVProgressHUD/SVProgressHUD.h>
+#import "FyBaseNavigationController.h"
+#import "FyBaseViewController.h"
+#import "FyBaseTableViewController.h"
+#import "FYGradientView.h"
+#import "FyNetworkManger.h"
+#import <YYCategories/YYCategories.h>
+#import "UIViewController+fyBase.h"
+#import "UIViewController+fyHUD.h"
+#import "UIViewController+fyPush.h"
+#import "UIViewController+fyStoryboard.h"
+#import "fyConfig.h"
+#import "FyAuthorizationUtil.h"
+#import <Masonry/Masonry.h>
+#import "FyUserCenter.h"
+#import "UIImageView+WebCache.h"
+
+
+#define kGuideViewNotification @"kGuideViewNotification"
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* fyPrefixHeader_pch */

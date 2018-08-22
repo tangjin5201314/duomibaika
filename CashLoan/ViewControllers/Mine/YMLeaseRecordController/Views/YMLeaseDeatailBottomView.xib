@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="8ir-ws-rgT" customClass="YMLeaseDeatailBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实际金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Oj-1A-eRI">
+                    <rect key="frame" x="12" y="26.5" width="57.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.26235326779543144" green="0.26235326779543144" blue="0.26235326779543144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouV-OY-Off">
+                    <rect key="frame" x="79.5" y="35" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.31024224811774892" green="0.44511676566376623" blue="0.72210104698324873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oId-3Y-UDH">
+                    <rect key="frame" x="292" y="17.5" width="80" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1U3-gg-1SY"/>
+                        <constraint firstAttribute="width" constant="80" id="YSl-cn-jX5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="-10" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="买断" backgroundImage="home_applyBtn_bg"/>
+                    <connections>
+                        <action selector="buyOutAction:" destination="8ir-ws-rgT" eventType="touchUpInside" id="iyx-qY-3As"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcO-Ec-0gG">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="0.5"/>
+                    <color key="backgroundColor" red="0.64365878809999999" green="0.64365878809999999" blue="0.64365878809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="i3R-IS-0pn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oId-3Y-UDH" secondAttribute="trailing" constant="12" id="Fkz-cz-gSl"/>
+                <constraint firstItem="ouV-OY-Off" firstAttribute="leading" secondItem="6Oj-1A-eRI" secondAttribute="trailing" constant="10" id="J14-zw-rX6"/>
+                <constraint firstItem="hcO-Ec-0gG" firstAttribute="top" secondItem="8ir-ws-rgT" secondAttribute="top" id="JN5-Pr-6U9"/>
+                <constraint firstItem="oId-3Y-UDH" firstAttribute="centerY" secondItem="8ir-ws-rgT" secondAttribute="centerY" constant="5" id="VBg-4S-ohy"/>
+                <constraint firstItem="hcO-Ec-0gG" firstAttribute="leading" secondItem="8ir-ws-rgT" secondAttribute="leading" id="Vlx-fv-iD8"/>
+                <constraint firstItem="6Oj-1A-eRI" firstAttribute="leading" secondItem="8ir-ws-rgT" secondAttribute="leading" constant="12" id="bbj-DM-RVH"/>
+                <constraint firstAttribute="trailing" secondItem="hcO-Ec-0gG" secondAttribute="trailing" id="c4t-d5-uqS"/>
+                <constraint firstItem="ouV-OY-Off" firstAttribute="centerY" secondItem="6Oj-1A-eRI" secondAttribute="centerY" id="kKk-UY-65r"/>
+                <constraint firstItem="6Oj-1A-eRI" firstAttribute="centerY" secondItem="8ir-ws-rgT" secondAttribute="centerY" id="ua6-Xc-YHm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="buyOutBtn" destination="oId-3Y-UDH" id="T2p-Qv-erb"/>
+                <outlet property="priceLab" destination="ouV-OY-Off" id="UEw-bk-Abj"/>
+                <outlet property="segmentLine" destination="hcO-Ec-0gG" id="AOW-AB-6iT"/>
+            </connections>
+            <point key="canvasLocation" x="-194" y="-199"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_applyBtn_bg" width="180" height="46"/>
+    </resources>
+</document>

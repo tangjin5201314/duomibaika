@@ -1,0 +1,71 @@
+
+/* 样式表只是用来设置控件的属性，并不和标准css一致  */
+
+/* 基 础 样 式 表 */
+
+/* 背景色样式 */
+#BG-3{background-color:#f0f0f0};
+/* 字体样式 */
+#TX-C{font-size:23px;}
+#TX-D{font-size:16px;}
+#TX-E{font-size:14px;}
+#TX-F{font-size:13px;}
+#TX-G{font-size:12px;}
+#TX-H{font-size:15px;}
+
+/* 首次支付头部视图 */
+#TX-NameGoods{font-size:15px;}/*商品名称文字样式*/
+#TX-Money{font-size:31px;font-style:bold;}/*金额文字样式*/
+#TX-S{font-size:15px}
+#TX-HeadView{font-color:#333333;bg-color:#ffffff}
+
+#TX-1{font-color:#333333}
+#TX-2{font-color:#ff0000}
+#TX-3{font-color:#00a0e9} /*短信弹框确认文字颜色，购买信息价格文字颜色 #fe5000*/
+#TX-4{font-color:#999999}
+#TX-5{font-color:#5aa5e9}
+#TX-8{font-color:#ffffff}
+#TX-9{font-color:#ffeec1}
+#TX-11{font-color:#666666}
+#TX-12{font-color:#555555}
+
+/* 控件样式表 */
+
+UITextField{left:8px;width:304px;height:44px;border-style:none;font-color:#333333;font-size:16px;border-width:.4f;border-color:#d7d7d7;border-color-hi:#00a0e9;border-radius:5;background-color:#ffffff}
+UIButton{left:10px;width:300px;height:44px;font-color:#ffffff;font-size:18px;}
+
+NavBar {left:0px;top:0px;width:320px;height:44px;font-size:19px;font-color:#ffffff;
+    font-style:bold;background-color:#ffffff;background-image:ll_nav_bg3.png;}
+
+CusTitles {payTitle:连连支付;signTitle:绑卡;alertTitle:连连支付;alertTitle2:绑卡;
+    alertConfirmPay:立即支付;alertConfirmBind:确认绑卡;alertUseSms:使用短信验证码支付}
+
+
+LLColorButton{border-radius:5px;}
+
+#a-button{normal-color:#00a0e9;hi-color:#017fc7;disable-color:214,214,214}
+#b-button{normal-color:#00a0e9;hi-color:#017fc7;font-color:#ffffff;}
+/*#c-button{normal-color:#fe932f;hi-color:#cb7320;}*/
+/*#d-button{normal-color:#dcdcdc;hi-color:#a9a9a9;}*/
+#e-button{normal-color:#ffeec1;hi-color:#eeeeee;border-color:#ffd778;border-width:0.8px;font-color:#fe5000;}
+#f-button{normal-color:#ffffff;hi-color:#999999;border-color:#d9d9d9;border-width:0.8px;font-color:#666666;}
+#pay-button{normal-color:#00a0e9;hi-color:#017fc7;disable-color:214,214,214;border-radius:5}
+
+#half-button{width:128px;font-size:14px;}
+
+/* 输入框 */
+/*#short-textfield{width:280px;}*/
+#inputVC-sms-textfield{left:8px;width:216px;height:45;border-radius:5}/*短信输入框*/
+LLSmallCountDownButton{left:216; top:0; width:88; height:44;border-radius:5}
+#disable-textfield{user-interaction-enabled:false;background-color:221,221,221}
+.deadlineField{font-size:15px;date-color:#999999; word-color:#999999;}
+
+/* 页 面 样 式 */
+basePage{}
+
+#contentSpace{left:10px;width:120px;}
+#printerContentSpace{left:15;width:271px;}
+
+#label-tip{font-color:#999999;font-size:15px;height:44px;width:55px;}
+
+#support-tip{font-color:#666666;font-size:15px;align:center;width:300;height:44px;}
