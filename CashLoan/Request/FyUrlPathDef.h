@@ -10,12 +10,12 @@
 #define FyUrlPathDef_h
 
 //正式地址
-#define APP_BASEURLPATH @"https://api.youmibank.com"
-//#define APP_BASEURLPATH @"http://10.4.25.75"
+#define APP_BASEURLPATH
+//#define APP_BASEURLPATH 
 
 //测试地址
-#define APP_BASEURLPATH_DEV @"https://dev.youmibank.com" //http://120.79.161.223
-//#define APP_BASEURLPATH_DEV @"http://10.4.25.75" //http://120.79.161.223
+#define APP_BASEURLPATH_DEV
+//#define APP_BASEURLPATH_DEV
 
 //H5服务器地址,上线前需要改成正式环境
 #define APP_H5_PRO @"https://api.youmibank.com"
